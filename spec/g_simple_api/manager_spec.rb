@@ -101,11 +101,11 @@ describe GSimpleApi::Manager do
     describe "#execute" do
       let(:method) { "activities.list" }
       before do
-        mock_execute = mock("Test", :data => "result")
+        double_execute = double("Test", :data => "result")
         subject.stub(:split_method => ["activities", "list"])
         subject.stub(:chained_method_calls => "")
         subject.stub_chain(:settings, :discovered_api).and_return({})
-        subject.stub_chain(:settings, :api_client, :execute).and_return(mock_execute)
+        subject.stub_chain(:settings, :api_client, :execute).and_return(double_execute)
       end
 
       it "calls #split_method once" do
