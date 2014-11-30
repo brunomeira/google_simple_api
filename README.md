@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/g_simple_api.svg)](http://badge.fury.io/rb/g_simple_api)
+[![Build Status](https://travis-ci.org/brunomeira/g_simple_api.svg)](https://travis-ci.org/brunomeira/g_simple_api)
 
 # GSimpleApi
 
