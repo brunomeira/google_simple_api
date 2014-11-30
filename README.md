@@ -61,6 +61,7 @@ where the first parameter is the action that will be executed and the second is 
 
 Tokens may expire due a variety of different reasons. If you have stored the user's refresh token then you won't need to ask
 the users to go through all the acceptance process again (This is true for cases where the users didn't remove access to the app, you didn't change the scope of the app, or etc...). In order to do it so, you only need to call:
+
         manager = GSimpleApi.process
         manager.get_token("refresh_token", true) # The second parameter tells the function you are passing a refresh_token
 
