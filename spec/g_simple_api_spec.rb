@@ -17,6 +17,7 @@ describe GSimpleApi do
   let(:name) { "test" }
   let(:version) { "1.0.0" }
   let(:api) { "plus" }
+  let(:api_version) { "v1" }
   let(:client_id) { "123152412412" }
   let(:client_secret) { "sad3121232" }
   let(:scope) { "plus.me" }
@@ -26,6 +27,7 @@ describe GSimpleApi do
       config.name = name
       config.version = version
       config.api = api
+      config.api_version = api_version
       config.client_id = client_id
       config.client_secret = client_secret
       config.scope = scope
@@ -42,6 +44,7 @@ describe GSimpleApi do
         GSimpleApi.settings.name.should == name
         GSimpleApi.settings.version.should == version
         GSimpleApi.settings.api.should == api
+        GSimpleApi.settings.api_version.should == api_version
         GSimpleApi.settings.client_id.should == client_id
         GSimpleApi.settings.client_secret.should == client_secret
       end

@@ -65,7 +65,7 @@ module GSimpleApi
 
         private
         def chained_method_calls(methods, api)
-            methods.inject(api) { |e, method| e.send(method) }
+            methods.inject(api) { |e, method| e.send(method.underscore) }
         end
 
         def split_method(method)

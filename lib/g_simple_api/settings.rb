@@ -16,13 +16,14 @@ module GSimpleApi
   class Settings
 
     attr_accessor :api, :api_client, :client_id, :client_secret,
-                  :discovered_api, :name, :version, :scope
+                  :discovered_api, :name, :version, :scope, :api_version
 
     def initialize(options = {})
       @api = options[:api]
       @client_id = options[:client_id]
       @client_secret = options[:client_secret]
       @name = options[:name]
+      @api_version = options[:api_version]
       @version = options[:version]
       @scope = [].push(options[:scope]).flatten
     end
@@ -47,7 +48,7 @@ module GSimpleApi
     end
 
     def discover_api
-      @api_client.discovered_api(@api)
+      @api_client.discovered_api(@api, @api_version || "v1")
     end
   end
 end

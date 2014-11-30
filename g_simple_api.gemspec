@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Bruno Meira"]
   spec.email         = ["goesmeira@gmail.com"]
   spec.summary       = "Access data from Google's apis"
-  spec.description   = "GSimpleApi makes it easy to access & receive data from google's apis "
+  spec.description   = "GSimpleApi makes it easy to access and receive data from google's apis "
   spec.homepage      = "https://github.com/brunomeira/g_simple_api"
   spec.license       = "Apache 2.0"
 

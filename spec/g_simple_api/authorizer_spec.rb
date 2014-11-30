@@ -19,10 +19,12 @@ describe GSimpleApi::Authorizer do
   let(:api) { "plus" }
   let(:client_id) { "123152412412" }
   let(:client_secret) { "sad3121232" }
+  let(:api_version) { "v1" }
   let(:params) do
     {
         :name => name, :version => version, :api => api,
-        :client_id => client_id, :client_secret => client_secret
+        :client_id => client_id, :client_secret => client_secret,
+        :api_version => api_version
     }
   end
 
