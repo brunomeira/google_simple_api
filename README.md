@@ -31,11 +31,11 @@ After completed the pre-setting process, you can go back to your app and work on
          GSimpleApi.setup do |config|
           config.name = "test" #The name of your application
           config.version = "1" #The current version of your application
-          config.api = "plus" #The api that will be used.
-          config.api_version = "v1" #If not specified, it will defaults to v1
+          config.api = "drive" #The api that will be used.
+          config.api_version = "v2" #If not specified, it will defaults to v1
           config.client_id = "XXXXXXXXXXXXXXXX" #Value provided in the Credentials Section.
           config.client_secret = "XXXXXXXXXXXXXX" #Value provided in the Credentials Section.
-          config.scope = "plus.me" # The scope(s) required to use the api, it can be an Array.
+          config.scope = "drive" # The scope(s) required to use the api, it can be an Array.
          end
 
 2. You now have to send the user to Google's authorization page. Use:
@@ -52,7 +52,7 @@ For further use, You should store the values returned from this call.
 
 4. To make any call to the api, you have to invoke:
 
-        manager.execute("method.name", {key1: "value", key2:"value2"})
+        manager.execute("method.name", {key1: "value", key2:"value2"}) # Example: manager.execute("files.list")
 where the first parameter is the action that will be executed and the second is any required or optional parameter.
 
 5. I hope you enjoy it.
