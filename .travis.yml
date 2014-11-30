@@ -15,3 +15,5 @@ notifications:
   email:
     recipients:
       - goesmeira@gmail.com
+
+script: bundle exec rspec spec
