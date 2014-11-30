@@ -19,9 +19,9 @@ Or install it yourself as:
 
 ## How to Use
 
-To use the gem you will need to first create a project on [https://console.developers.google.com](https://console.developers.google.com), allow access to the required apis under and create a new Client ID.
+To use the gem you will need to firstly create a project on [https://console.developers.google.com](https://console.developers.google.com), then allow access to the required apis and for last create a new Client ID.
 
-After completed the pre-setting process, you can go back to your app and work on  the following steps:
+After completed the pre-setting process, you can go back to your app and work on the following steps:
 
 #### First time use
 1. Create a *g_simple_api.rb* in /initializers
@@ -36,22 +36,33 @@ After completed the pre-setting process, you can go back to your app and work on
          end
 
 2. You now have to send the user to Google's authorization page. Use:
+
          GSimpleApi.process.authorize_url("specified callback")
+
 to receive the proper URL and redirect the user to it.
 
 3. If the user accepts the access to the app, google will redirect you back to the "specified callback" along with a "code" parameter. Use this code to get the valid token.
+
         manager = GSimpleApi.process
         manager.get_token(params[:code])
 For further use, You should store the values returned from this call.
 
 4. To make any call to the api, you have to invoke:
+
         manager.execute("method.name", {key1: "value", key2:"value2"})
 where the first parameter is the action that will be executed and the second is any required or optional parameter.
 
 5. I hope you enjoy it.
 
-#### Gettin
-If you are
+## Further Reading
+If you are having trouble to understand the gem or want something more customizable, check the links below:
+
+1. [google-api-ruby-client](https://github.com/google/google-api-ruby-client) - GSimpleApi is based on this gem. If you need something more complex than get a token and access the api, you should check it out.
+
+2. [Google OAUTH process](https://developers.google.com/accounts/docs/OAuth2WebServer) - If you need more background on how the authorization process works.
+
+3. [APIs services](https://developers.google.com/apis-explorer) - Interesting resource, If you need to know which apis,services and scopes are available.
+
 
 
 ## Contributing
@@ -60,4 +71,4 @@ If you are
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
-    5. Create a new Pull Request
+5. Create a new Pull Request
