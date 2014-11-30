@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/g_simple_api.svg)](http://badge.fury.io/rb/g_simple_api)
+
 # GSimpleApi
 
 This gem wraps the calls executed by [google-api-ruby-client](https://github.com/google/google-api-ruby-client)
@@ -62,8 +64,6 @@ If you are having trouble to understand the gem or want something more customiza
 2. [Google OAUTH process](https://developers.google.com/accounts/docs/OAuth2WebServer) - If you need more background on how the authorization process works.
 
 3. [APIs services](https://developers.google.com/apis-explorer) - Interesting resource, If you need to know which apis,services and scopes are available.
-
-
 
 ## Contributing
 
