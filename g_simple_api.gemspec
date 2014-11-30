@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["goesmeira@gmail.com"]
   spec.summary       = "access data from Google's apis"
   spec.description   = "GSimpleApi makes it easy to access & receive data from google's apis "
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/brunomeira/g_simple_api"
   spec.license       = "Apache 2.0"
 
   spec.files         = `git ls-files -z`.split("\x0")
