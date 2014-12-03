@@ -11,11 +11,9 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-require 'bundler/setup'
-Bundler.setup
-
-require 'google_simple_api'
-
-#RSpec.configure do |config|
-#  # some (optional) config here
-#end
+module GoogleSimpleApi
+    MAJOR = 1
+    MINOR = 0
+    PATCH = 0
+    VERSION = "#{MAJOR}.#{MINOR}.#{PATCH}"
+end
