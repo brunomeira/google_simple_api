@@ -1,5 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/google_simple_api.svg)](http://badge.fury.io/rb/google_simple_api)
 [![Build Status](https://travis-ci.org/brunomeira/google_simple_api.svg?branch=master)](https://travis-ci.org/brunomeira/google_simple_api)
+
 # GoogleSimpleApi
 
 This gem wraps up calls executed by [google-api-ruby-client](https://github.com/google/google-api-ruby-client)
