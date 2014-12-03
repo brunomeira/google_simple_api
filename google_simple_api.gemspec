@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'google_simple_api/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "google-simple-api"
+  spec.name          = "google_simple_api"
   spec.version       = GoogleSimpleApi::VERSION
   spec.authors       = ["Bruno Meira"]
   spec.email         = ["goesmeira@gmail.com"]

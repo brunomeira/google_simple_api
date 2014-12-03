@@ -1,5 +1,5 @@
-[![Gem Version](https://badge.fury.io/rb/google-simple-api.svg)](http://badge.fury.io/rb/google-simple-api)
-[![Build Status](https://travis-ci.org/brunomeira/google-simple-api.svg?branch=master)](https://travis-ci.org/brunomeira/google-simple-api)
+[![Gem Version](https://badge.fury.io/rb/google_simple_api.svg)](http://badge.fury.io/rb/google_simple_api)
+[![Build Status](https://travis-ci.org/brunomeira/google_simple_api.svg?branch=master)](https://travis-ci.org/brunomeira/google_simple_api)
 # GoogleSimpleApi
 
 This gem wraps up calls executed by [google-api-ruby-client](https://github.com/google/google-api-ruby-client)
@@ -9,7 +9,7 @@ and makes it simple for you to be authorized and access the data provided by Goo
 
 Add this line to your application's Gemfile:
 
-    gem 'google-simple-api'
+    gem 'google_simple_api'
 
 And then execute:
 
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install google-simple-api
+    $ gem install google_simple_api
 
 ## How to Use
 
@@ -76,7 +76,7 @@ If you are having trouble to understand the gem or want something more customiza
 
 ## Contributing
 
-1. Fork it ( https://github.com/brunomeira/google-simple-api/fork )
+1. Fork it ( https://github.com/brunomeira/google_simple_api/fork )
 2. Create your feature branch (`git checkout b my-new-feature`)
 3. Commit your changes (`git commit am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
